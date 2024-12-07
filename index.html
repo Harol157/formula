@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta sobre Videojuegos 102</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Encuesta sobre Videojuegos 102</h1>
+
+    <p id="description">Por favor, responde las siguientes preguntas para ayudarnos a conocer tus preferencias sobre videojuegos.</p>
+
+    <form id="survey-form">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" placeholder="Ingresa tu nombre" required>
+
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" placeholder="Ingresa tu correo" required>
+
+        <label for="age">Edad:</label>
+        <input type="number" id="age" min="10" max="100" placeholder="Ingresa tu edad" required>
+
+        <label for="gaming-platform">¿En qué plataforma prefieres jugar?</label>
+        <select id="gaming-platform" required>
+            <option value="pc">PC</option>
+            <option value="consola">Consola (PlayStation, Xbox, etc.)</option>
+            <option value="movil">Móvil</option>
+            <option value="nintendo">Nintendo Switch</option>
+        </select>
+
+        <p>¿Qué género de videojuegos prefieres?</p>
+        <input type="checkbox" id="rpg" value="rpg">
+        <label for="rpg">RPG</label>
+        <input type="checkbox" id="fps" value="fps">
+        <label for="fps">FPS (Shooter en primera persona)</label>
+        <input type="checkbox" id="deportes" value="deportes">
+        <label for="deportes">Juegos de deportes</label>
+        <input type="checkbox" id="aventura" value="aventura">
+        <label for="aventura">Aventura</label>
+        <input type="checkbox" id="estrategia" value="estrategia">
+        <label for="estrategia">Estrategia</label>
+
+        <p>¿Cuántas horas a la semana sueles jugar?</p>
+        <input type="radio" id="menos-2" name="horas-juego" value="menos-2">
+        <label for="menos-2">Menos de 2 horas</label>
+        <input type="radio" id="2-5" name="horas-juego" value="2-5">
+        <label for="2-5">2 a 5 horas</label>
+        <input type="radio" id="5-10" name="horas-juego" value="5-10">
+        <label for="5-10">5 a 10 horas</label>
+        <input type="radio" id="mas-10" name="horas-juego" value="mas-10">
+        <label for="mas-10">Más de 10 horas</label>
+
+        <p>¿Cuál es tu videojuego favorito?</p>
+        <input type="text" id="favorite-game" placeholder="Escribe el nombre del juego" required>
+
+        <label for="feedback">Comentarios o sugerencias:</label>
+        <textarea id="feedback" placeholder="Deja tus comentarios aquí"></textarea>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
